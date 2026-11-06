@@ -1,0 +1,193 @@
+
+
+# 💍 LOTR Character Recommender
+
+### Character Recommendation System Based on Dialogue Similarity
+
+A Natural Language Processing (NLP) project that recommends **Lord of the Rings characters based on dialogue similarity**. The application allows users to select any dialogue and discover the Top 5 characters whose dialogues are most similar to the selected text.
+
+---
+
+##  Project Overview
+
+The LOTR Character Recommender uses **TF-IDF Vectorization** and **Cosine Similarity** to analyze dialogue from *The Lord of the Rings* and recommend similar characters.
+
+The project includes an interactive Streamlit web application where users can:
+
+- Select a dialogue from a dropdown menu.
+- Click the **Recommend Characters** button.
+- Get the Top 5 recommended characters based on dialogue similarity.
+- Search dialogues using specific keywords.
+- Explore character dialogue data interactively.
+
+> **Note:** Recommendations are based on textual similarity, not actual character relationships, friendship, or personality.
+
+---
+##  Dataset Source
+
+The dataset used in this project was sourced from Kaggle.
+
+- **Platform:** Kaggle
+- **Dataset:** Lord of the Rings (LOTR) Scripts and Characters
+- **Source:** [Kaggle – Search LOTR Datasets]( https://www.kaggle.com/datasets/paultimothymooney/lord-of-the-rings-data)
+
+The dataset contains character information and dialogue from *The Lord of the Rings*, which was used for data preprocessing, text analysis, and building the character recommendation system.
+
+### Dataset Files
+
+- `lotr_scripts.csv` – Original dialogue dataset
+- `lotr_characters.csv` – Character information
+- `movies.pkl` – Processed dataset used by the Streamlit application
+
+**Note:** Dataset credit belongs to the original Kaggle dataset creator. Please refer to the original dataset page for licensing and attribution requirements.
+
+---
+
+## Features
+
+- Interactive dialogue selection
+- Top 5 character recommendations
+- TF-IDF-based text representation
+- Cosine similarity computation
+- Dialogue keyword search
+- Interactive Streamlit interface
+- NLP-based recommendation approach
+
+---
+
+## Tech Stack
+
+| Technology | Purpose |
+|---|---|
+| Python | Programming language |
+| Pandas | Data manipulation |
+| Scikit-learn | TF-IDF and cosine similarity |
+| Streamlit | Interactive web application |
+| Jupyter Notebook | Data exploration and experimentation |
+| NLP | Text similarity analysis |
+
+---
+
+##  Project Structure
+
+```text
+LOTR-Character-Recommender/
+│
+├── app.py                 # Streamlit application
+├── notebook.ipynb         # NLP analysis and experimentation
+├── movies.pkl             # Processed dialogue dataset
+├── lotr_characters.csv    # Character information
+├── lotr_scripts.csv      # LOTR dialogue dataset
+├── similarity.pkl         # Saved similarity data
+├── requirements.txt        # Project dependencies
+└── README.md               # Project documentation
+```
+
+---
+
+##  Installation & Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/shruti629/LOTR-Character-Recommender.git
+```
+
+### 2. Navigate to the Project Directory
+
+```bash
+cd LOTR-Character-Recommender
+```
+
+### 3. Create a Virtual Environment
+
+```bash
+python -m venv venv
+```
+
+### 4. Activate the Virtual Environment
+
+**Windows:**
+
+```bash
+venv\Scripts\activate
+```
+
+### 5. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 6. Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The application will open automatically in your browser.
+
+---
+
+##  How It Works
+
+### Step 1: Data Preparation
+The dialogue dataset is loaded and cleaned by removing missing character names and dialogue text.
+
+### Step 2: TF-IDF Vectorization
+TF-IDF converts dialogue text into numerical vectors based on the importance of words in the dataset.
+
+### Step 3: Dialogue Selection
+Users select a dialogue from the dropdown menu in the Streamlit application.
+
+### Step 4: Cosine Similarity
+The selected dialogue is compared with character dialogues using cosine similarity.
+
+### Step 5: Character Recommendation
+Similarity scores are aggregated for each character, and the Top 5 characters are displayed based on their average similarity scores.
+
+---
+
+##  Recommendation Method
+
+**TF-IDF (Term Frequency–Inverse Document Frequency)**
+
+Represents dialogue text numerically while giving importance to informative words.
+
+**Cosine Similarity**
+
+Measures similarity between two text vectors:
+
+\[
+\text{Cosine Similarity} = \frac{A \cdot B}{\|A\|\|B\|}
+\]
+
+Higher similarity scores indicate greater textual similarity.
+
+---
+
+##  Learning Outcomes
+
+- Understanding NLP text preprocessing
+- Implementing TF-IDF vectorization
+- Applying cosine similarity
+- Building recommendation systems
+- Developing interactive applications with Streamlit
+- Working with real-world text datasets
+
+---
+
+##  Author
+
+**Shruti Kumari**
+
+- GitHub: [shruti629](https://github.com/shruti629)
+- Project Repository: [LOTR-Character-Recommender](https://github.com/shruti629/LOTR-Character-Recommender)
+
+---
+
+ If you find this project interesting, consider starring the repository!
+
+---
+
+*Built with Python, NLP, Scikit-learn, and Streamlit.*
