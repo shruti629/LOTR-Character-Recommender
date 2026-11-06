@@ -1,8 +1,8 @@
 
 
- 💍 LOTR Character Recommender
+#  💍 LOTR Character Recommender
 
-### Character Recommendation System Based on Dialogue Similarity
+###  Character Recommendation System Based on Dialogue Similarity
 
 A Natural Language Processing (NLP) project that recommends **Lord of the Rings characters based on dialogue similarity**. The application allows users to select any dialogue and discover the Top 5 characters whose dialogues are most similar to the selected text.
 
@@ -83,7 +83,6 @@ LOTR-Character-Recommender/
 └── README.md               # Project documentation
 ```
 
----
 
 ##  Installation & Setup
 
@@ -177,7 +176,7 @@ Higher similarity scores indicate greater textual similarity.
 
 ---
 
-##  Author
+##   Author
 
 **Shruti Kumari**
 
